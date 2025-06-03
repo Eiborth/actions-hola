@@ -2,12 +2,10 @@ name: Primer Workflow
 
 on: [push]
 
-
 jobs:
   build:
-    runs-on: ubuntu-lastest
-
+    runs-on: ubuntu-latest
 
     steps:
       - name: Mostrar mensaje
-        run: echo "Hola desde github Actions"
+        run: echo "Hola desde GitHub Actions"
