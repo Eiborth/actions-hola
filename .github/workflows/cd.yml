@@ -1,22 +1,19 @@
-name: Cd Ejemplo
-
+name: CD Example
 
 on:
-    push:
-        branches: [main]
+  push:
+    branches: [main]
 
 jobs:
-    deploy:
-        runs-on: ubuntu-lastest
+  deploy:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Clonar repo
-              uses: actions/checkout@v3
+    steps:
+      - name: Clonar repo
+        uses: actions/checkout@v3
 
-            - name: Simular build
-              run: echo "construyendo proyecto"
+      - name: Simular build
+        run: echo "Construyendo proyecto..."
 
-            - name: Simular deploy
-              run: echo "Desplegando con henki :)"
-
-
+      - name: Simular deploy
+        run: echo "Desplegando con henki :)"
