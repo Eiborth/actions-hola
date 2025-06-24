@@ -1,0 +1,22 @@
+name: Cd Ejemplo
+
+
+on:
+    push:
+        branches: [main]
+
+jobs:
+    deploy:
+        runs-on: ubuntu-lastest
+
+        steps:
+            - name: Clonar repo
+              uses: actions/checkout@v3
+
+            - name: Simular build
+              run: echo "construyendo proyecto"
+
+            - name: Simular deploy
+              run: echo "Desplegando con henki :)"
+
+
