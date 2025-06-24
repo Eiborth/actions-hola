@@ -4,3 +4,4 @@ Esta es una prueba para el CI ajustado
 PRUEBA DE CI EXITOSA desde hola.txt
 
 Prueba de cd con github desde henki
+Cd automatizado
