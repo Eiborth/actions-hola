@@ -1,0 +1,12 @@
+name: Validar archivo hola.txt
+
+on: [push, pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Verificar existencia de hola.txt
+        run: test -f hola.txt && echo "✅ Existe" || (echo "❌ No existe" && exit 1)
